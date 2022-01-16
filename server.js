@@ -1,11 +1,6 @@
 const PORT = process.env.PORT || 8800;
 let USERS = []
 
-const express = require('express');
-const app = express();
-const httpserver = require('http').createServer(app)
-httpserver.listen(PORT);
-
 const WebSocketServer = require('ws')
 const websocketserver = new WebSocketServer.Server({port:PORT})
 
@@ -104,4 +99,4 @@ websocketserver.on('connection',socketclient=>{
 
 })
 
-console.log("The WebSocket Server is active...")
+console.log("The WebSocket Server is active and running at "+PORT)
