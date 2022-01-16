@@ -1,0 +1,23 @@
+{
+  "name": "rock-paper-scissors-online",
+  "version": "1.0.0",
+  "description": "Play rock paper scissor from anywhere with your friends or strangers online",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rohitmirchandani/rock-paper-scissors-online.git"
+  },
+  "author": "Rohit Mirchandani",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rohitmirchandani/rock-paper-scissors-online/issues"
+  },
+  "homepage": "https://github.com/rohitmirchandani/rock-paper-scissors-online#readme",
+  "dependencies": {
+    "express": "^4.17.2"
+  }
+}
