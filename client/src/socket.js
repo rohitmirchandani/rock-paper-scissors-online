@@ -21,7 +21,7 @@
     opponent:'',
     runsocket : (app)=>{
         Socket.app = app;
-        Socket.socket = new WebSocket('ws://paper-scissor-rocks-online.herokuapp.com')
+        Socket.socket = new WebSocket('wss://paper-scissor-rocks-online.herokuapp.com')
         Socket.socket.onopen = ()=>{
             console.log('connected..')
             Socket.onopencallback()
