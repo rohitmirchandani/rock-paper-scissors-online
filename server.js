@@ -1,19 +1,10 @@
 const PORT = process.env.PORT || 8800;
 let USERS = [];
 
-const path = require('path');
-const https = require('https');
-const fs = require('fs');
-
-
 
 const express = require('express');
 const app = express();
 
-const server = https.createServer({
-  key:fs.readFileSync(path.join(__dirname,'cert','key.pem')),
-  cert:fs.readFileSync(path.join(__dirname,'cert','cert.pem')),
-},app)
 
 app.use(express.static('client/public'));
 
@@ -24,9 +15,9 @@ app.get('/',(req,res)=>{
 const WebSocketServer = require("ws");
 const websocketserver = new WebSocketServer.Server({ noServer:true });
 
-server.listen(PORT, ()=>console.log('Server is running at port '+ PORT));
+app.listen(PORT, ()=>console.log('Server is running at port '+ PORT));
 
-server.on("upgrade", (req, res, head) => {
+app.on("upgrade", (req, res, head) => {
   websocketserver.handleUpgrade(req, res, head, (socket) => {
     websocketserver.emit("connection", socket, req);
   });
