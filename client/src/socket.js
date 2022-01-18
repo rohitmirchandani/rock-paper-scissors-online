@@ -44,10 +44,10 @@
         
         //Socket.socket.onmessage = (event)=>{}
         
-        Socket.socket.on('message',(event)=>{
+        Socket.socket.on('message',(data)=>{
         
-            console.log(event.data)
-            let message = JSON.parse(event.data)
+            console.log(data)
+            let message = JSON.parse(data)
             if(message.event == 'userjoined'){
                 console.log("Welcome to the game")
                 Socket.userjoinedcallback();
