@@ -4,6 +4,8 @@ let USERS = [];
 
 const express = require('express');
 const app = express();
+const http = require('http')
+const socketio = require('socket.io')
 
 
 app.use(express.static('client/public'));
@@ -12,10 +14,13 @@ app.get('/',(req,res)=>{
   res.send('Not found what you want')
 })
 
-const WebSocketServer = require("ws");
-const websocketserver = new WebSocketServer.Server({ noServer:true });
+const server = http.createServer(app);
+//const WebSocketServer = require("ws");
+//const websocketserver = new WebSocketServer.Server({ noServer:true });
+const websocketserver = socketio(server);
 
-app.listen(PORT, ()=>console.log('Server is running at port '+ PORT));
+
+server.listen(PORT, ()=>console.log('Server is running at port '+ PORT));
 
 app.on("upgrade", (req, res, head) => {
   websocketserver.handleUpgrade(req, res, head, (socket) => {

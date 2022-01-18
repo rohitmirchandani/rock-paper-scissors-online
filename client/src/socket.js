@@ -20,19 +20,32 @@
     username : '',
     opponent:'',
     runsocket : (app)=>{
+        
         Socket.app = app;
-        Socket.socket = new WebSocket('wss://paper-scissor-rocks-online.herokuapp.com')
-        Socket.socket.onopen = ()=>{
+        Socket.socket = io('wss://paper-scissor-rocks-online.herokuapp.com')
+        
+        //Socket.socket.onopen = ()=>{}
+        
+        Socket.socket.on('connect',()=>{
             console.log('connected..')
             Socket.onopencallback()
-        }
-        Socket.socket.onerror = (event)=>{
+        })
+        
+        //Socket.socket.onerror = (event)=>{}
+        
+        Socket.socket.on('error',()=>{
             Socket.onerrorcallback();
-        }
-        Socket.socket.onclose = (event)=>{
+        })
+        
+        //Socket.socket.onclose = (event)=>{}
+        Socket.socket.on('close',()=>{
             Socket.onerrorcallback();
-        }
-        Socket.socket.onmessage = (event)=>{
+        })
+        
+        //Socket.socket.onmessage = (event)=>{}
+        
+        Socket.socket.on('message',(event)=>{
+        
             console.log(event.data)
             let message = JSON.parse(event.data)
             if(message.event == 'userjoined'){
@@ -70,7 +83,8 @@
             }else if(message.event='quit'){
                 Socket.opponentquitcallback()
             }
-        }
+        
+        })
     },
     onadd : (event)=>{
         let message = {'event':'iwanttoplay','username':event.target.getAttribute('button-key')}
