@@ -22,7 +22,7 @@ Enjoy the game of rock paper scissors from anywhere online with your friends and
 
 
 - After getting connected to the socket server, user is asked to enter a username. If the username is unique than the user will be taken to the game else will be asked again for a different username.
-![App Screenshot](https://64.media.tumblr.com/2484cba58a926df2c6fb62d5bbdd8390/9fcf453451d89d34-f2/s2048x3072/4c79aaee9d4e5e7f2d778e62dd915ac6d8d80d0d.png)
+![App Screenshot](https://64.media.tumblr.com/5e68f9bf319b09021c053e45cf522b55/fe26f2e72f3fbaf8-be/s2048x3072/530a372e0fd8a555a438832cb53aae87aacea1d2.png)
 - Here user can send request to any player from the active players section or can accept/reject the request itself.
 ![App Screenshot](https://64.media.tumblr.com/09dda44e950997ac346284bbc4bf4398/3500b5e3ee804e51-a5/s2048x3072/ee0d41813ce584e4c991e32521d6806d7d3b3ef3.png)
 - when the other user accepts the request, the game get started between them.
