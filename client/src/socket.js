@@ -27,7 +27,7 @@
         //Socket.socket.onopen = ()=>{}
         
         Socket.socket.on('connect',()=>{
-            console.log('connected..')
+            //console.log('connected..')
             Socket.onopencallback()
         })
         
@@ -46,14 +46,14 @@
         
         Socket.socket.on('message',(data)=>{
         
-            console.log(data)
+            //console.log(data)
             let message = JSON.parse(data)
             if(message.event == 'userjoined'){
-                console.log("Welcome to the game")
+                //console.log("Welcome to the game")
                 Socket.userjoinedcallback();
                 app.setState({'username':Socket.username})
             }else if(message.event == 'alreadyexist'){
-                console.log('username already exist')
+                //console.log('username already exist')
                 Socket.alreadyexistcallback()
             }else if(message.event == 'userslist'){
                 app.setState({

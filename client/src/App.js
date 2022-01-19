@@ -3,7 +3,6 @@ import Socket from './socket'
 import Users from './Users';
 import UsernameForm from './UsernameForm';
 import Message from './Message';
-import Header from './Header';
 // import './style.scss';
 
 class App extends React.Component{
