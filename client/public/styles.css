@@ -9,7 +9,8 @@
           box-sizing: border-box;
 }
 
-body, html {
+body,
+html {
   height: 100%;
   width: 100%;
   overflow: hidden;
@@ -95,17 +96,17 @@ a {
 
 #app-div #form-div #getusernameform label {
   font-size: 2rem;
-  font-family: 'Righteous',cursive;
+  font-family: "Righteous", cursive;
   color: #fff0f0;
   margin-bottom: 30px;
   text-shadow: 1px 1px 1px #555;
 }
 
-#app-div #form-div #getusernameform input[type='text'] {
+#app-div #form-div #getusernameform input[type="text"] {
   border: none;
   padding: 10px;
   font-size: 1.5rem;
-  font-family: 'Big Shoulders Display', cursive;
+  font-family: "Big Shoulders Display", cursive;
   width: 70%;
   font-weight: bolder;
   background-color: #ffe9e9;
@@ -120,7 +121,7 @@ a {
   letter-spacing: 1px;
 }
 
-#app-div #form-div #getusernameform input[type='text']:focus {
+#app-div #form-div #getusernameform input[type="text"]:focus {
   -webkit-transition-duration: 0.3s;
           transition-duration: 0.3s;
   outline: none;
@@ -140,7 +141,8 @@ a {
 }
 
 @-webkit-keyframes bounce {
-  0%, 100% {
+  0%,
+  100% {
     bottom: -50vh;
   }
   50% {
@@ -149,7 +151,8 @@ a {
 }
 
 @keyframes bounce {
-  0%, 100% {
+  0%,
+  100% {
     bottom: -50vh;
   }
   50% {
@@ -193,7 +196,7 @@ a {
   text-transform: lowercase;
   color: #f9a04e;
   letter-spacing: 3px;
-  font-family: 'Righteous', cursive;
+  font-family: "Righteous", cursive;
   line-height: 50px;
 }
 
@@ -237,7 +240,9 @@ a {
   display: flex !important;
 }
 
-#app-div #form-div .papers, #app-div #form-div .papers:before, #app-div #form-div .papers:after {
+#app-div #form-div .papers,
+#app-div #form-div .papers:before,
+#app-div #form-div .papers:after {
   z-index: 3;
   background-color: #ffc80b;
   border: 2px solid #ccc;
@@ -252,7 +257,8 @@ a {
   margin: 50px auto;
 }
 
-#app-div #form-div .papers:before, #app-div #form-div .papers:after {
+#app-div #form-div .papers:before,
+#app-div #form-div .papers:after {
   content: "";
   position: absolute;
   left: 0;
@@ -281,7 +287,7 @@ a {
   bottom: 15px;
   width: 25rem;
   min-height: 6.5rem;
-  font-family: 'Rubik', sans-serif;
+  font-family: "Rubik", sans-serif;
   font-weight: bolder;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -299,7 +305,8 @@ a {
   margin: 10px 0;
 }
 
-#app-div #message-div #accept-button, #app-div #message-div #decline-button {
+#app-div #message-div #accept-button,
+#app-div #message-div #decline-button {
   padding: 8px 20px;
   margin: 0 10px;
   border: none;
@@ -308,7 +315,8 @@ a {
           transition-duration: 0.3s;
 }
 
-#app-div #message-div #accept-button:hover, #app-div #message-div #decline-button:hover {
+#app-div #message-div #accept-button:hover,
+#app-div #message-div #decline-button:hover {
   -webkit-transition-duration: 0.3s;
           transition-duration: 0.3s;
   -webkit-transform: translate(-10px);
@@ -442,7 +450,6 @@ a {
 }
 
 #app-div #game-div #game #welcome-screen #arrow {
-  image-rendering: optimizeSpeed;
   width: 50%;
   position: absolute;
   top: 0px;
@@ -451,7 +458,6 @@ a {
 }
 
 #app-div #game-div #game #welcome-screen #logo {
-  image-rendering: optimizeSpeed;
   width: 20rem;
   height: 20rem;
   position: absolute;
@@ -467,7 +473,7 @@ a {
 }
 
 #app-div #game-div #game #welcome-screen h1 {
-  font-family: 'Londrina Shadow', cursive;
+  font-family: "Londrina Shadow", cursive;
   font-size: 3rem;
   position: absolute;
   top: 10px;
@@ -482,7 +488,7 @@ a {
   color: #d4905e;
   font-size: 5rem;
   text-align: center;
-  font-family: 'Righteous', sans-serif;
+  font-family: "Righteous", sans-serif;
   padding: 20px;
   z-index: 2;
   -webkit-transform: rotate(-2deg);
@@ -502,7 +508,7 @@ a {
   text-transform: lowecase;
   font-weight: 300;
   z-index: 2;
-  font-family: 'Rubik', sans-serif;
+  font-family: "Rubik", sans-serif;
   letter-spacing: 2px;
   background-color: #eee;
   -webkit-box-shadow: 10px 10px #726651;
@@ -544,7 +550,7 @@ a {
   padding: 20px 0;
   font-size: 2rem;
   background-color: #a385bd;
-  color: #F6CFFe;
+  color: #f6cffe;
   letter-spacing: 2px;
   text-shadow: #451f55 2px 2px 0px, #451f55 4px 4px 0px;
   overflow-y: auto;
@@ -559,7 +565,7 @@ a {
 
 #app-div h3 {
   text-align: center;
-  font-family: 'Righteous',cursive;
+  font-family: "Righteous", cursive;
   font-size: 2rem;
 }
 
@@ -574,7 +580,7 @@ a {
   padding: 10px 20px;
   text-shadow: none;
   list-style: none;
-  font-family: 'Big Shoulders Display', cursive;
+  font-family: "Big Shoulders Display", cursive;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -600,7 +606,7 @@ a {
   font-weight: 400;
   color: #784f88;
   border: 2px solid #784f88;
-  background-color: #F6CFFe;
+  background-color: #f6cffe;
   cursor: pointer;
   -webkit-transition-duration: 0.3s;
           transition-duration: 0.3s;
@@ -616,7 +622,7 @@ a {
 
 #app-div ul button:active {
   background-color: #784f88;
-  color: #F6CFFe;
+  color: #f6cffe;
 }
 
 #app-div #versus-screen {
@@ -672,7 +678,7 @@ a {
           align-items: center;
   -webkit-transform: scale(2.2);
           transform: scale(2.2);
-  text-shadow: 0 -1px 4px #FFF, 0 -2px 10px #ff0, 0 -10px 20px #ff8000, 0 -18px 40px #F00;
+  text-shadow: 0 -1px 4px #fff, 0 -2px 10px #ff0, 0 -10px 20px #ff8000, 0 -18px 40px #f00;
 }
 
 #app-div #versus-screen p span:last-child {
@@ -700,8 +706,8 @@ a {
 }
 
 #app-div #versus-screen p span {
-  font-family: 'Big Shoulders Display', cursive;
-  text-shadow: 0 -1px 4px #FFF, 0 -2px 10px #ff0, 0 -10px 20px #ff8000, 0 -18px 40px #F00;
+  font-family: "Big Shoulders Display", cursive;
+  text-shadow: 0 -1px 4px #fff, 0 -2px 10px #ff0, 0 -10px 20px #ff8000, 0 -18px 40px #f00;
 }
 
 #app-div #game-screen {
@@ -716,7 +722,7 @@ a {
   width: 100%;
   height: 100%;
   font-size: 3rem;
-  font-family: 'Big Shoulders Display',cursive;
+  font-family: "Big Shoulders Display", cursive;
   text-transform: uppercase;
 }
 
@@ -893,7 +899,6 @@ a {
   border: 3px solid #726651;
   border-radius: 50%;
   background-color: #ccc;
-  image-rendering: optimizeSpeed;
 }
 
 #app-div #game-screen #section-div #opponent-section p {
@@ -947,7 +952,7 @@ a {
   -webkit-transform: translate(-50%, -50%) scale(0);
           transform: translate(-50%, -50%) scale(0);
   font-size: 3rem;
-  font-family: 'Righteous', cursive;
+  font-family: "Righteous", cursive;
   background-color: #333;
   color: wheat;
 }
@@ -962,8 +967,8 @@ a {
   right: 20px;
   bottom: 20px;
   font-size: 2rem;
-  font-family: 'Righteous', sans-serif;
-  padding: 0  20px;
+  font-family: "Righteous", sans-serif;
+  padding: 0 20px;
   text-transform: uppercase;
   letter-spacing: 2px;
   cursor: pointer;
@@ -1023,13 +1028,13 @@ a {
 #app-div #game-screen #confirm-message-div #confirm-message p {
   width: 100%;
   text-align: center;
-  font-family: 'Big Shoulders Display' , cursive;
+  font-family: "Big Shoulders Display", cursive;
   text-transform: capitalize;
   color: #555;
 }
 
 #app-div #game-screen #confirm-message-div #confirm-message button {
-  font-family: 'Big Shoulders Display', sans-serif;
+  font-family: "Big Shoulders Display", sans-serif;
   text-transform: capitalize;
   padding: 0 10px;
   font-size: 2.5rem;
@@ -1039,11 +1044,13 @@ a {
   background-color: #aaa;
 }
 
-#app-div #game-screen #confirm-message-div #confirm-message button:hover, #app-div #game-screen #confirm-message-div #confirm-message button:active {
+#app-div #game-screen #confirm-message-div #confirm-message button:hover,
+#app-div #game-screen #confirm-message-div #confirm-message button:active {
   background-color: #dc2f02;
 }
 
-#app-div #game-screen #confirm-message-div #confirm-message button:last-child:hover, #app-div #game-screen #confirm-message-div #confirm-message button:last-child:active {
+#app-div #game-screen #confirm-message-div #confirm-message button:last-child:hover,
+#app-div #game-screen #confirm-message-div #confirm-message button:last-child:active {
   background-color: #67a0b7;
 }
 
@@ -1108,7 +1115,7 @@ a {
 
 .submit-button::before {
   position: absolute;
-  content: '';
+  content: "";
   width: 100%;
   height: 100%;
   top: 0;
