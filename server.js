@@ -111,7 +111,7 @@ websocketserver.on("connection", (socketclient) => {
     } catch (e) {}
   });
 
-  socketclient.on("close", () => {
+  socketclient.on("disconnect", () => {
     //remove from users list
     try {
       USERS.splice(USERS.indexOf(currentuser), 1);
