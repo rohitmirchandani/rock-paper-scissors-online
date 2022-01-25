@@ -1,7 +1,7 @@
 
 # Paper Scissor Rocks Online
 
-Enjoy the game of rock paper scissors from anywhere online with your friends and strangers. View the project live **<a href= 'https://paper-scissor-rocks-online.herokuapp.com/' target = '_blank'>here</a>**.
+Enjoy the game of rock paper scissors from anywhere online with your friends and strangers. View the project live **<a href= 'https://paper-scissor-rocks-online.herokuapp.com/' target = 'blank'>here</a>**.
 
 
 ## Features
