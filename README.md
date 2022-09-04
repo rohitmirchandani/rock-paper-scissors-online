@@ -22,13 +22,21 @@ Enjoy the game of rock paper scissors from anywhere online with your friends and
 
 
 - After getting connected to the socket server, user is asked to enter a username. If the username is unique than the user will be taken to the game else will be asked again for a different username.
+
 ![App Screenshot](https://64.media.tumblr.com/5e68f9bf319b09021c053e45cf522b55/fe26f2e72f3fbaf8-be/s2048x3072/530a372e0fd8a555a438832cb53aae87aacea1d2.png)
+
 - Here user can send request to any player from the active players section or can accept/reject the request itself.
+
 ![App Screenshot](https://64.media.tumblr.com/09dda44e950997ac346284bbc4bf4398/3500b5e3ee804e51-a5/s2048x3072/ee0d41813ce584e4c991e32521d6806d7d3b3ef3.png)
+
 - when the other user accepts the request, the game get started between them.
+
 ![App Screenshot](https://64.media.tumblr.com/b29e887cfe7273e8e5fd4afe83ec8598/3eb82dee16b938df-08/s1280x1920/b332bd836942b3a9f88a9c01f565f1c30469cd5a.png)
+
 - User select his choice b/w rock, paper and scissors and that choice cannot be seen by other player until both player make choices.
+
 ![App Screenshot](https://64.media.tumblr.com/735319a48565853cb271cbf3bb18445d/5d101c1d0e7f01de-5c/s2048x3072/4d813764d8c4a59e37e656c7f95ec61fc702c150.png)
+
 - Both player will play 5 rounds of the game and the winner will be declared accordingly.
 - If in any case the user quits the game or gets disconnected from the server, the game automatically ends on both sides telling the user of what happened. 
 
